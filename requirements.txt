@@ -1,0 +1,8 @@
+nemo_toolkit[all]
+umap-learn
+replicate==0.25.1
+jupyter==1.0.0
+python-dotenv==1.0.1
+torch
+matplotlib
+scikit-learn
