@@ -42,19 +42,20 @@ We visually confirmed the clustering of embeddings by employing **the dimensiona
 Original samples are depicted in vibrant colors, while their clones are represented in the same, albeit paler, colors:
 ![t-SNE - compare real and cloned voices](t-SNE.jpg "t-SNE - compare real and cloned voices")
 ### Tresholds Determination
-To determine the thresholds, we constructed distributions of cosine similarities within voice samples from the same individual, between voice samples from different individuals, and between samples of real voices and their clones.
+To ascertain the thresholds, we constructed and analyzed the distributions of **cosine similarities**, which were evaluated in three distinct scenarios:
 
-This process involved the statistical analysis of similarity scores to establish quantiles, which served as the basis for our threshold determination. The cosine similarity between two voice embeddings, \(A\) and \(B\), is given by:
+**Within the Same Speaker's Voice Samples**
+For each speaker, the cosine similarity scores were computed for all possible pairs of their voice samples, yielding a distribution representing the intra-speaker variability. The mathematical representation of this can be expressed as:
+![Same Speaker's Voice Samples](Each_speaker.png "Same Speaker's Voice Samples")
 
-\[ \text{Cosine Similarity}(A, B) = \frac{A \cdot B}{\|A\|\|B\|} = \frac{\sum_{i=1}^{n} A_i B_i}{\sqrt{\sum_{i=1}^{n} A_i^2}\sqrt{\sum_{i=1}^{n} B_i^2}} \]
+**Between Different Speakers**
+We calculated the cosine similarity scores between voice samples from different speakers to capture inter-speaker variability:
+![Same Speaker's Voice Samples](Each_speaker.png "Same Speaker's Voice Samples")
 
-where:
+**Between Original Voices and Clones**
+To understand the cloning effect, the similarity scores between each original voice sample and its cloned versions were calculated:
 
-- \(A\) and \(B\) are two voice embeddings,
-- \(A \cdot B\) is the dot product of vectors \(A\) and \(B\),
-- \(\|A\|\) and \(\|B\|\) are the Euclidean norms (or magnitudes) of the vectors.
-
-For each distribution, we calculated the following quantiles to determine significant thresholds:
+Each distribution was examined to identify quantiles that demarcate significant thresholds, which could be employed to distinguish between different voices or between original and cloned voices:
 
 - The 10th percentile, capturing the lower boundary of similarity scores.
 - The 25th, 50th (median), and 75th percentiles, describing the central tendency and spread.
