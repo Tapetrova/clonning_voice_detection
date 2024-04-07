@@ -7,6 +7,7 @@ It enables the differentiation between original and cloned voices, as well as th
 - [Basic Concepts](#basic-concepts)
   - [Voice Embeddings](#voice-embeddings)
   - [Cosine Similarity](#cosine-similarity)
+  - [Voice Cloning](#voice-clonning)
 - [Applications](#applications)
 - [Requirements](#requirements)
 - [Quick Start](#quick-start)
@@ -20,5 +21,8 @@ Voice embeddings are obtained by feeding voice recordings into the deep neural n
 ### Cosine Similarity
 Cosine similarity measures the cosine of the angle between two non-zero vectors in a multi-dimensional space, offering a metric for assessing the similarity between two voice embeddings. It is defined as follows:
 ![Cosine Similiraty](Cosine_Sim.png "Cosine Similiraty")
+### Voice Cloning
+Voice cloning is a technology that enables the creation of synthetic speech that closely mimics a target speaker's voice. This involves analyzing the acoustic characteristics of the target voice from audio samples and then using this analysis to generate new speech that sounds like it was spoken by the target speaker.
+**Model:** We utilize **NVIDIA's TTS (Text-to-Speech) system** for our voice cloning process. This advanced model is designed to generate highly realistic and natural-sounding speech that closely mimics the target speaker's voice characteristics, offering a seamless cloning effect.
 
 
