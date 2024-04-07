@@ -21,7 +21,6 @@ This multi-faceted approach facilitates a thorough examination of voice data, pr
 Voice embeddings are obtained by feeding voice recordings into the deep neural network, which outputs a vector in a high-dimensional space. Each dimension represents a learned feature of the voice, capturing unique characteristics of the speaker.
 
 **Model:** We utilize NVIDIA's NeMo toolkit, specifically the **nvidia/speakerverification_en_titanet_large model**, for extracting voice embeddings. 
-
 This pre-trained model is designed for speaker verification tasks and generates a high-dimensional vector representation for each voice sample.
 ### Cosine Similarity
 Cosine similarity measures the cosine of the angle between two non-zero vectors in a multi-dimensional space, offering a metric for assessing the similarity between two voice embeddings. It is defined as follows:
