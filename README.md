@@ -9,6 +9,8 @@ It enables the differentiation between original and cloned voices, as well as th
   - [Cosine Similarity](#cosine-similarity)
   - [Voice Cloning](#voice-clonning)
 - [Implementation](#implementation)
+-   - [Visualisation of Clusters](#visualisation-of-clusters)
+    - [Tresholds Determination](#tresholds-determination)
 - [Requirements](#requirements)
 - [Quick Start](#quick-start)
 
