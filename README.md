@@ -42,18 +42,7 @@ We visually confirmed the clustering of embeddings by employing **the dimensiona
 Original samples are depicted in vibrant colors, while their clones are represented in the same, albeit paler, colors:
 ![t-SNE - compare real and cloned voices](t-SNE.jpg "t-SNE - compare real and cloned voices")
 ### Tresholds Determination
-To ascertain the thresholds, we constructed and analyzed the distributions of **cosine similarities**, which were evaluated in three distinct scenarios:
-
-**Within the Same Speaker's Voice Samples**
-For each speaker, the cosine similarity scores were computed for all possible pairs of their voice samples, yielding a distribution representing the intra-speaker variability. The mathematical representation of this can be expressed as:
-![Same Speaker's Voice Samples](Each_speaker.png "Same Speaker's Voice Samples")
-
-**Between Different Speakers**
-We calculated the cosine similarity scores between voice samples from different speakers to capture inter-speaker variability:
-![Same Speaker's Voice Samples](Each_speaker.png "Same Speaker's Voice Samples")
-
-**Between Original Voices and Clones**
-To understand the cloning effect, the similarity scores between each original voice sample and its cloned versions were calculated:
+To determine the thresholds, we constructed distributions of cosine similarities within voice samples from the same individual, between voice samples from different individuals, and between samples of real voices and their clones.
 
 Each distribution was examined to identify quantiles that demarcate significant thresholds, which could be employed to distinguish between different voices or between original and cloned voices:
 
