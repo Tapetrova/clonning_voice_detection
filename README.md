@@ -1,5 +1,5 @@
-# Voice Verification Toolkit
-# Speaker Recognition and Clon Detection
+# Speaker Recognition and Clone Detection Toolkit
+
 The advanced analysis of voice data, encompassing voice cloning, embedding extraction, and the use of cosine similarity for voice verification. 
 It enables the differentiation between original and cloned voices, as well as the verification of speaker identity, leveraging state-of-the-art machine learning techniques.
 
