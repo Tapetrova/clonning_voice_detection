@@ -25,6 +25,11 @@ This pre-trained model is designed for speaker verification tasks and generates 
 ### Cosine Similarity
 Cosine similarity measures the cosine of the angle between two non-zero vectors in a multi-dimensional space, offering a metric for assessing the similarity between two voice embeddings. It is defined as follows:
 ![Cosine Similiraty](Cosine_Sim.png "Cosine Similiraty")
+
+From a geometric standpoint, cosine similarity quantifies the cosine of the angle separating two voice embeddings. A zero-degree angle translates to a similarity score of one, a ninety-degree angle to a score of zero, and a one hundred and eighty-degree angle to a score of negative one.
+
+In speaker verification, cosine similarity is employed as a scoring method, assigning higher scores to embeddings with greater similarity. Setting an appropriate threshold for this score helps distinguish between matches and mismatches, enabling the system to verify a speaker's identity. The same thresholding principle applies in the realm of clone detection, wherein a distinct threshold can discern between an original voice and its synthetic duplicate.
+
 ### Voice Cloning
 Voice cloning is a technology that enables the creation of synthetic speech that closely mimics a target speaker's voice. This involves analyzing the acoustic characteristics of the target voice from audio samples and then using this analysis to generate new speech that sounds like it was spoken by the target speaker.
 
