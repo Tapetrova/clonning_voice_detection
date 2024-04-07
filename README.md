@@ -42,9 +42,27 @@ We visually confirmed the clustering of embeddings by employing **the dimensiona
 Original samples are depicted in vibrant colors, while their clones are represented in the same, albeit paler, colors:
 ![t-SNE - compare real and cloned voices](t-SNE.jpg "t-SNE - compare real and cloned voices")
 ### Tresholds Determination
-To determine the thresholds, we constructed distributions of cosine similarities within voice samples from the same individual, between voice samples from different individuals, and between samples of real voices and their clones. 
+To determine the thresholds, we constructed distributions of cosine similarities within voice samples from the same individual, between voice samples from different individuals, and between samples of real voices and their clones.
 
-This process yielded a probability distribution and thresholds for distinguishing between voices of different individuals and between real and cloned voices:
+This process involved the statistical analysis of similarity scores to establish quantiles, which served as the basis for our threshold determination. The cosine similarity between two voice embeddings, \(A\) and \(B\), is given by:
+
+\[ \text{Cosine Similarity}(A, B) = \frac{A \cdot B}{\|A\|\|B\|} = \frac{\sum_{i=1}^{n} A_i B_i}{\sqrt{\sum_{i=1}^{n} A_i^2}\sqrt{\sum_{i=1}^{n} B_i^2}} \]
+
+where:
+
+- \(A\) and \(B\) are two voice embeddings,
+- \(A \cdot B\) is the dot product of vectors \(A\) and \(B\),
+- \(\|A\|\) and \(\|B\|\) are the Euclidean norms (or magnitudes) of the vectors.
+
+For each distribution, we calculated the following quantiles to determine significant thresholds:
+
+- The 10th percentile, capturing the lower boundary of similarity scores.
+- The 25th, 50th (median), and 75th percentiles, describing the central tendency and spread.
+- The 90th percentile, representing the upper boundary of similarity scores.
+
+These quantiles help identify the thresholds for decision-making in speaker verification and clone detection tasks, enabling us to distinguish between voices of different individuals and between real and cloned voices with a high degree of accuracy.
+
+The resulting histograms and quantile lines are illustrated below:
 ![Distributions - real, clonned, different](Distributions.png "Distributions - real, clonned, different")
 
 
