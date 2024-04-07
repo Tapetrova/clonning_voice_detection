@@ -11,8 +11,6 @@ It enables the differentiation between original and cloned voices, as well as th
 - [Implementation](#implementation)
 -   - [Visualisation of Clusters](#visualisation-of-clusters)
     - [Tresholds Determination](#tresholds-determination)
-- [Requirements](#requirements)
-- [Quick Start](#quick-start)
 
 ## Basic Concepts
 The toolkit comprises three main components: voice cloning using a Text-to-Speech (TTS) API, extraction of voice embeddings, and analysis of these embeddings through cosine similarity. 
