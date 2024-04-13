@@ -1,7 +1,7 @@
 # Speaker Recognition and Clone Detection Toolkit
 
-The advanced analysis of voice data, encompassing voice cloning, embedding extraction, and the use of cosine similarity for voice verification. 
-It enables the differentiation between original and cloned voices, as well as the verification of speaker identity, leveraging state-of-the-art machine learning techniques.
+The analysis of voice data, encompassing voice cloning, embedding extraction, and the use of cosine similarity for voice verification. 
+It enables the differentiation between original and cloned voices, as well as the verification of speaker identity.
 
 <b><u>Our system can determine which recording is the real Lex Fridman and which one is his clone:</u></b>
 - [LF1_1](./LF1_1.wav)
