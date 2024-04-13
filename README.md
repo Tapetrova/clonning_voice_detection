@@ -50,7 +50,3 @@ Each distribution was examined to identify quantiles that demarcate significant 
 
 These quantiles help identify the thresholds for decision-making in speaker verification and clone detection tasks, enabling us to distinguish between voices of different individuals and between real and cloned voices with a high degree of accuracy.
 
-The resulting histograms and quantile lines are illustrated below:
-![Distributions - real, clonned, different](Distributions.png "Distributions - real, clonned, different")
-
-
